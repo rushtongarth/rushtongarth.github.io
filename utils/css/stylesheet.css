@@ -1,0 +1,223 @@
+/**************** CSS for Stephen Garth *******************/
+/* Author: Jonathan Gatlin (JTG)                          */
+/* CSS adapted and maintained by Stephen Garth (SRG)      */
+/* www.jonathangatlin.com                                 */
+/* Versioning:                                            */ 
+/* -- 20060815 - Init - JTG                               */
+/* -- 20060920 - shadow mods - JTG                        */
+/* -- 20110110 - Color mods - SRG                         */
+/* -- 20120110 - Content modification - SRG               */
+/* -- 20150105 - Color mods - SRG                         */
+/* -- 20150105 - Spacing and type setting mods - SRG      */
+/*             - Changes inspired by:                     */
+/*               https://pages-themes.github.io/hacker/   */
+/**********************************************************/
+
+/**************** HTML Elements ***************************/
+* {
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #151515 url("../images/bkg.png") 0 0;
+	color: #a9ff03;
+	font-size: 12px;
+	line-height: 1.5;
+}
+/**************** Header **********************************/
+
+#header{
+	margin-left: auto;
+	margin-right: auto;
+	width: 760px;
+}
+
+#header h1{
+	font-size: 26px;
+	color: #a9ff03;
+}
+
+/**************** Content *********************************/
+
+#contentwrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 770px;	
+}
+
+#content{
+	margin: 0px;
+	float: left;
+	width: 600px;
+	min-height: 500px;
+	background-color: #000000;
+}
+
+#content h2{
+	padding-left: 10px;
+	font-size: 18px;
+	color: #a9ff03;	
+}
+
+#content h3{
+	padding-left: 10px;
+	font-size: 14px;
+	color: #a9ff03;	
+}
+
+#content p{
+	color: #a9ff03;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	font-size: 12px;
+}
+
+#content ul{
+	color: #a9ff03;
+	padding-left: 25px;
+	padding-right: 10px;
+	text-align: justify;
+	font-size: 12px;
+}
+
+#content a{
+	color: #63c0f5;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #63c0f5;
+	text-decoration: underline;
+}
+
+#content img{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #FFF;
+}
+
+#project-table{
+	color: #a9ff03;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#project-table th{
+	border:1px solid #a8a7a7;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+}
+
+#project-table td{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 12px;
+}
+
+#table table{
+border:1px solid #a9ff03;
+}
+
+#buffer {
+display: none;
+}
+
+#content form{
+	color: #a9ff03;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/**************** Navigation ******************************/
+#nav{
+	margin: 0px;
+	float: right;
+	width: 160px;
+	background-color: #000000;
+}
+
+#nav h3{
+	padding-left: 10px;
+	font-size: 14px;
+	color: #a9ff03;	
+}
+
+#nav p{
+	color: #a9ff03;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+#nav a{
+	color: #63c0f5;
+	text-decoration: none;
+}
+
+#nav a:hover{
+	text-decoration: underline;
+}
+
+#nav form{
+	padding-left: 10px;
+	color: #63c0f5;
+	padding-left: 10px;
+}
+/**************** Footer **********************************/
+
+#footer{
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 760px;
+}
+#footer p{
+	text-align: left;
+	color: #a9ff03;
+	font-size: 10px;
+}
+
+#footer a{
+	color: #a9ff03;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
+
+/**************** Drop Shadows ****************************/
+
+.shadow{
+border:1px solid silver;
+font:10pt arial;
+position:relative;
+display:inline;
+background:white;
+z-index:100
+}
+
+.shadow_inner{
+overflow:hidden;
+position:absolute;
+top: -1000px;
+/*
+ * modify to change the shade solidity/opacity, same as below
+ */
+/* filter:alpha(Opacity=10); */
+/* 
+ * firefox 1.5 opacity
+ */
+/* opacity:0.1; */
+/* 
+ * mozilla opacity 
+ */
+/* -moz-opacity:0.1;  */
+/*
+ * opacity
+ */
+/* -khtml-opacity:0.1;  */
+/* z-index:10 */
+}

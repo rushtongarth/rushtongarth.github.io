@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" href="utils/css/stylesheet.css" type="text/css">
+<script type="text/javascript" src="utils/js/shadow.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>rushtongarth github</title>
+</head>
+
+<body>
+<div id="header">
+  <h1>Welcome</h1>
+</div>
+
+<div id="contentwrap">
+	<div id="content" class="shadow">
+		<h2>Github Projects</h2>
+		<div id="project-table"/></div>
+	</div>
+	
+
+
+<div id="nav" class="shadow">
+	<h3>Navigation:</h3>
+	<p>
+	<a href="javascript:history.go(0)">Update</a><br />
+	</p><p>
+</div>
+
+  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+  <script src="utils/js/github.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(function() {
+        $("#project-table").loadRepositories("rushtongarth");
+    });
+  </script>
+</body>
+</html>
+
